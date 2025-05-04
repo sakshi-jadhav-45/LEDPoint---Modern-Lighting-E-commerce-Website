@@ -1,0 +1,1075 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }/* Logo Styling */
+.logo-orange {
+    color: #FF7F50;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo-black {
+    color: #212529;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Search Form */
+.search-form {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-form input.form-control {
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 40px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+.search-form .btn-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #6c757d;
+}
+
+/* Navbar Links */
+.nav-link {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000;
+}
+
+/* Icon size */
+.bi {
+    font-size: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    padding: 175px 0;
+    background-color: #F5F5F5;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: visible;
+}
+
+/* Pattern Container - New */
+.pattern-container {
+    position: absolute;
+    top: 40px;
+    left: 850px;
+    width: 100%;
+    bottom: 200px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none; /* Allows clicks to pass through */
+    overflow: visible;
+}
+
+.pattern-image {
+    position: absolute;
+    width: auto;
+    height: auto;
+    max-width: none;
+    object-fit: none;
+    object-position: center 10%;
+    bottom:-200px;
+    top: 0;
+    right: -1200px;
+    z-index: 1;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left:1530px;
+  
+  width: 100px;
+  height: 100px;
+  background-image: url("Rectangle 13.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 10;
+}
+
+
+/* Responsive adjustments for hero section */
+@media (max-width: 1200px) {
+    .hero-section::after {
+        left: calc(100% - 80px);
+        width: 80px;
+        height: 80px;
+    }
+    .pattern-container {
+        left: 650px;
+    }
+    .pattern-image {
+        right: -1000px;
+        bottom:-800px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 10px 0;
+    }
+    
+    .hero-section::after {
+        left: 80%;
+        width: 100px;
+        height: 100px;
+        bottom: -1px;
+    }
+    .pattern-container {
+        left: 450px;
+        top: 30px;
+    }
+    .pattern-image {
+        right: -800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 0;
+    }
+    
+    .hero-section::after {
+        left: 75%;
+        width: 100px;
+        height: 100px;
+        bottom: -1px;
+    }
+    .pattern-container {
+        left: 250px;
+        top: 20px;
+    }
+    .pattern-image {
+        right: -500px;
+        bottom:800px;
+    }
+}
+
+@media (max-width: 576px) {
+  
+    
+    .hero-section::after {
+        left: 70%;
+        width: 100px;
+        height: 100px;
+        bottom: -1px;
+    }
+    .pattern-container {
+        left: 120px;
+        top: 10px;
+    }
+    .pattern-image {
+        right: -300px;
+        transform: scale(0.8); /* Slightly scale down the pattern on mobile for better visibility */
+    }
+}
+
+@media (max-width: 480px) {
+    .pattern-container {
+        left: 50px;
+        top: 5px;
+    }
+    .pattern-image {
+        right: -200px;
+        transform: scale(0.7); /* Further scale down for extra small devices */
+    }
+}
+
+.hero-title {
+    font-family: Libre Baskerville;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #1C2431;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #6c757d;
+    position: relative;
+    z-index: 2;
+}
+.hero-image {
+    width: 670px;
+    height: 472px;
+    position: absolute;
+    left: 895px;
+    bottom: 47px;
+    background: url("image4.png");
+    z-index: 2;
+}
+
+/* Shop Now Button */
+.btn-shopnow {
+    background: transparent;
+    color: #212529;
+    font-size: 13px;
+    border: 1px solid #212529;
+    padding: 10px 32px;
+    font-weight: 600;
+    font-family: Poppins;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-shopnow:hover {
+    background: #212529;
+    color: #fff;
+}
+
+/* Why Us Section */
+.why-us-section {
+    padding: 60px 0;
+    
+}
+.why-us-section h2,
+.new-arrivals h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+
+.why-us-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.why-us-block {
+    flex: 1 1 25%;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+}
+
+.why-us-block:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 1px;
+    height: 60%;
+    background-color: #d3d3d3;
+}
+
+.why-us-item i {
+    font-size: 2.5rem;
+    color: #212529;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.why-us-item i:hover {
+    transform: scale(1.2);
+}
+
+.why-us-item p {
+    font-weight: 500;
+    width: 88px;
+height: 68px;
+top: 904px;
+left: 344px;
+
+    color: #212529;
+}
+
+/* Why Us Paragraph */
+.why-us-text {
+    margin-top: 30px;
+    padding: 30px 20px;
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: center;
+}
+.vertical-line {
+    width: 2px;
+    height: 79px;
+    background-color: #000; /* black or dark gray */
+    opacity: 0.1; /* make it lighter */
+  }
+  
+  .why-us-text {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    
+  }
+  
+/* New Arrivals Section */
+.card {
+    background: #fff;
+    overflow: hidden;
+
+}
+
+.card-title {
+    font-family: Poppins;
+font-weight: 500;
+font-size: 16px;
+line-height: 130%;
+letter-spacing: 4%;
+text-align: center;
+
+}
+/* Promo Banner Section */
+.promo-banner {
+    background: url('Rectangle 14.png') center center / cover no-repeat;
+    height:300px;
+    padding:70px 0;
+}
+
+.promo-title {
+    font-family: Libre Baskerville;
+font-weight: 700;
+font-size: 28px;
+line-height: 130%;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 20px;;
+
+}
+
+.promo-subtitle {
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.7;
+    padding: 0 15px;
+    position: static; /* remove absolute positioning if any */
+}
+
+    
+
+
+
+
+
+
+.promo-banner .btn-outline-light {
+    padding: 10px 30px;
+    font-weight: 100%;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.promo-banner .btn-outline-light:hover {
+    background-color: #fff;
+    color: #212529;
+}
+
+.promo-banner .container {
+    max-width: 1140px;  /* Optional: you can omit this if using Bootstrap default */
+    margin: 0 auto;
+}
+.brands-section .container .brands-title{
+    font-family: Libre Baskerville;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+   color: #1C2431;
+
+
+}
+      /* Featured Section Styling */
+      .featured-section {
+        padding: 69px 0;
+      }
+      
+      .featured-dark-section {
+        color: black
+      }
+      
+      .featured-dark-section .featured-title {
+        font-family: Libre Baskerville;
+font-weight: 500;
+font-size: 20px;
+line-height: 130%;
+letter-spacing: 0%;
+color: #1C2431;
+      }
+      
+      .featured-dark-section .featured-desc {
+        font-family: Poppins;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+color:#1C2431;
+opacity: 0.7;
+      }
+      
+      .featured-dark-section .featured-nav span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        cursor: pointer;
+        border: none;
+      }
+      .featured-dark-section .featured-nav .arrow-img {
+        width: 24px;
+        height: auto;
+        transition: transform 0.2s ease;
+      }
+      
+      .featured-dark-section .featured-nav span:hover .arrow-img {
+        transform: scale(1.2);
+      }
+      .featured-dark-section  p{
+         color: #FF9966;
+         
+      }
+      .featured-box {
+        max-width: 100%;
+        padding: 20px;
+      }
+      
+      .heart-icon {
+        top: 10px;
+        right: 10px;
+        z-index: 10;
+      }
+      
+      .heart-filled {
+        color: #FF7F50;
+      }
+      
+      .heart-outline {
+        color: #ccc;
+      }
+      
+      .stars {
+        display: flex;
+      
+        justify-content: left;
+        gap: 5px;
+      }
+      
+      .faded-star {
+        opacity: 0.3;
+      }
+      
+      .product-card {
+        padding: 69px;
+        transition: all 0.3s ease;
+        background-color:#F5F5F5;
+      }
+      .product-card .img-fluid h5{
+        width: 139px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: #F5F5F5; /* Match the container background */
+    }
+    .product-card img {
+      object-fit: contain;
+      text-align: center;
+      mix-blend-mode: multiply;
+      background-color: transparent; 
+  }
+      .product-card:hover {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      
+      .price {
+        font-size: 18px;
+        color: #333;
+        text-align: left;
+        text-align: center;
+      }
+          /* Mobile responsiveness */
+          @media (max-width: 576px) {
+            .featured-box {
+              padding: 10px;
+            }
+           
+            .featured-title {
+              font-size: 1.75rem;
+            }
+          
+            .featured-desc {
+              font-size: 1rem;
+            }
+            .product-card {
+              padding: 69px;
+              transition: all 0.3s ease;
+              background-color: #F5F5F5;
+          }
+          .card-title{
+            text-align: center;
+          }
+          .product-card .img-fluid h5{
+              width: 139px;
+              text-align: center;
+              display: block;
+              margin: 0 auto;
+              background-color: #F5F5F5; /* Match the container background */
+          }
+         
+          /* For transparent PNGs or JPGs with transparency */
+          .product-card img {
+              object-fit: contain;
+            mix-blend-mode: multiply; /* This helps remove white backgrounds from images */
+              background-color: transparent; /* Ensure image background is transparent */
+          }
+            .featured-nav span {
+              font-size: 1.2rem;
+            }
+          }
+          
+    
+/* Brands Section */
+.brands-section {
+    padding: 10px 0;
+    background-color: #fff;
+  }
+  
+  .brands-title {
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #363b42;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .brands-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px; /* Add consistent gap between brand boxes */
+  }
+  
+  /* Custom spacing class for second row */
+  .brands-row .col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  
+  .brand-box {
+    width: 180px;
+    height: 120px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+ 
+  }
+  
+  .brand-box img {
+    max-width: 85%;
+    max-height: 80px;
+    object-fit: contain;
+  }
+  @media (max-width: 768px) {
+    .brands-row {
+      gap: 0px;
+    }
+    
+    .brand-box {
+      height: 90px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .brands-title {
+      font-size: 24px;
+    }
+    
+    .brands-title br {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .brands-row {
+      margin-bottom: -149px;
+    }
+    
+    .brand-box {
+      height: 90px;
+      width: 100%;
+      box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.05);
+    }
+    
+    .brands-title {
+        font-family: Libre Baskerville;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0%; 
+        text-align: center;
+        color: #363b42;
+        opacity: 1;
+        margin-bottom: 20px;
+    }
+    
+    .brand-box img {
+      max-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+/* Gallery Section */
+.gallery-section {
+    padding: 70px 0;
+    color: white;
+    margin-top: 50px;
+  }
+  
+  .gallery-title {
+    font-family: Libre Baskerville;
+font-weight: 700;
+font-size: 28px;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 40px;
+color: #1C2431;
+   
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Top row - the dining room image takes up less space */
+  .dining-room {
+    grid-column: 1 / span 10;
+    grid-row: 1;
+    height: 380px;
+  }
+  
+  /* Top right - the exterior home image takes up more space */
+  .exterior-home {
+    grid-column: 11 / span 14;
+    grid-row: 1;
+    height: 380px;
+  }
+  
+  /* Bottom row - three smaller images with specific positioning */
+  .bookshelf {
+    grid-column: 1 / span 7;
+    grid-row: 2;
+    height: 280px;
+  }
+  
+  .office {
+    grid-column: 8 / span 10;
+    grid-row: 2;
+    height: 280px;
+  }
+  
+  .living-room {
+    grid-column: 18 / span 7;
+    grid-row: 2;
+    height: 280px;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 992px) {
+    .gallery-grid {
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .brands-section h2{
+      text-align: center;;
+    }
+    .dining-room {
+      grid-column: 1 / span 5;
+    }
+    
+    .exterior-home {
+      grid-column: 6 / span 7;
+    }
+    
+    .bookshelf {
+      grid-column: 1 / span 4;
+    }
+    
+    .office {
+      grid-column: 5 / span 4;
+    }
+    
+    .living-room {
+      grid-column: 9 / span 4;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    
+    .dining-room,
+    .exterior-home,
+    .bookshelf,
+    .office,
+    .living-room {
+      grid-column: 1 / -1;
+      height: 250px;
+    }
+    
+    .dining-room {
+      grid-row: 1;
+    }
+    
+    .exterior-home {
+      grid-row: 2;
+    }
+    
+    .bookshelf {
+      grid-row: 3;
+    }
+    
+    .office {
+      grid-row: 4;
+    }
+    
+    .living-room {
+      grid-row: 5;
+    }
+  }
+/* Footer Section */
+/* Footer Section Updated */
+.footer-section {
+    background-color: #1a212e;
+    color: #fff;
+    padding: 50px 0 30px;
+    margin: 0;
+  }
+  
+  /* Reset any custom container styles for footer */
+  .footer-section .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+  .footer-col h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #fff;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-section, .footer-section * {
+    box-sizing: border-box;
+  }
+  
+  
+  .footer-links li {
+    margin-bottom: 15px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  
+  .footer-address p,
+  .footer-contact p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    opacity: 0.8;
+  }
+  
+  .footer-address p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 1;
+  }
+  
+  .bottom-footer {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .copyright {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  .social-icons span {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .social-icons a:hover {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-col {
+      margin-bottom: 30px;
+    }
+    
+    .footer-col:last-child {
+      text-align: left;
+    }
+    
+    .social-icons {
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+    
+    .copyright {
+      margin-bottom: 15px;
+    }
+  }
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 50px;
+    }
+    .hero-image {
+      position: static;
+      width: 100%;
+      height: auto;
+      background: url("image4.png") center center / contain no-repeat;
+      margin-top: 20px;
+    }
+    .product-card {
+      padding: 69px;
+      transition: all 0.3s ease;
+      background-color: #F5F5F5;
+  }
+  
+  .product-card .img-fluid {
+      width: 139px;
+      display: block;
+      margin: 0 auto;
+      background-color: #F5F5F5; /* Match the container background */
+  }
+  
+  /* For transparent PNGs or JPGs with transparency */
+  .product-card img {
+      object-fit: contain;
+      mix-blend-mode: multiply; /* This helps remove white backgrounds from images */
+      background-color: transparent; /* Ensure image background is transparent */
+  }
+
+    .why-us-block {
+        flex: 1 1 50%;
+    }
+
+    .why-us-block:not(:last-child)::after {
+        height: 100%;
+        top: 0;
+    }
+
+    @media (max-width: 576px) {
+      .promo-title {
+        font-size: 20px;
+      }
+    
+      .promo-subtitle {
+        font-size: 14px;
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+      }
+    
+      .promo-banner {
+        padding: 40px 15px;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    
+    }
+/* Phones */
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 36px;
+        font-family: Libre Baskerville;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        
+    }
+  
+    .hero-image {
+      position: static;
+      width: 100%;
+      height: auto;
+      background: url("image4.png") center center / contain no-repeat;
+      margin-top: 20px;
+    }
+    @media (max-width: 576px) {
+         /* Phone fixes */
+    .hero-section {
+      padding: 80px 0;
+  }
+  
+  .hero-title {
+      font-size: 36px;
+      text-align: center;
+  }
+  .vertical-line{
+    width: 2px;
+  height: 79px;
+  background-color: #000; /* black or dark gray */
+  opacity: 0.1; /
+  }
+  .hero-subtitle {
+      text-align: center;
+  }
+  
+  .promo-title {
+      font-size: 24px;
+  }
+  
+  .why-us-item p {
+      width: auto;
+      height: auto;
+  }
+  
+  .footer-col {
+      text-align: center;
+  }
+  .footer-address{
+    text-align: center;
+  }
+  .footer-contact{
+    text-align: center;
+  }
+  .copyright{
+    text-align: center;
+  }
+  .social-icons {
+      justify-content: center;
+  }
+    }
+  }
+  /*p.roduct listing*/
+
+  .narrow-navbar {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: url("Rectangle 14.png") center center / cover no-repeat;
+  }
+
+  .narrow-navbar .container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .narrow-navbar .breadcrumb {
+    background: transparent;
+    font-family: Poppins;
+font-weight: 100;
+font-size: 12px;
+line-height: 170%;
+letter-spacing: 0%;
+top:10px;
+
+  }
+
+  .narrow-navbar .breadcrumb-item a {
+    color: #fff;
+ 
+  }
+
+  .narrow-navbar .breadcrumb-item.active {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .narrow-navbar .breadcrumb-item+.breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.7);
+  }
